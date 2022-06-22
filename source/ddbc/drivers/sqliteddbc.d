@@ -1434,9 +1434,9 @@ version (USE_SQLITE)
 
     class SQLITEDriver : Driver
     {
-        public static string generateUrl(string host, ushort port, string dbname)
+        public static string generateUrl(string dbname)
         {
-            return "sqlite://" ~ host ~ ":" ~ to!string(port) ~ "/" ~ dbname;
+            return "sqlite:" ~ dbname;
         }
 
         public static string[string] setUserAndPassword(string username, string password)
