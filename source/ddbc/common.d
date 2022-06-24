@@ -32,6 +32,9 @@ import std.stdio;
 import std.conv;
 import std.variant;
 
+static import std.datetime;
+static import std.datetime.systime;
+
 /// Implementation of simple DataSource: it just holds connection parameters, and can create new Connection by getConnection().
 /// Method close() on such connection will really close connection.
 class DataSourceImpl : DataSource {

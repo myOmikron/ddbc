@@ -60,6 +60,8 @@ import mysql.protocol.constants;
 import mysql.protocol.packets : FieldDescription, ParamDescription;
 import mysql.result : Row, ResultRange;
 
+static import mysql.connection;
+
 version(unittest) {
     /*
         To allow unit tests using MySQL server,
